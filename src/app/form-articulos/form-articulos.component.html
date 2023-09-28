@@ -1,0 +1,29 @@
+<h2 class="titulo">Formulario de Artículos</h2>
+<div class="container">
+  
+  <form (submit)="submitForm()" class="form">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="articulo.nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" [(ngModel)]="articulo.marca" required>
+    </div>
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" [(ngModel)]="articulo.modelo" required>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" [(ngModel)]="articulo.descripcion" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" [(ngModel)]="articulo.precio" required>
+    </div>
+    <button type="submit">Guardar</button>
+    
+  </form>
+</div>
+
